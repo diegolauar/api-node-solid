@@ -5,8 +5,6 @@ import { ZodError } from 'zod'
 
 export const app = fastify()
 
-console.log('a')
-
 app.register(appRoutes)
 
 app.setErrorHandler((error, _, reply) => {
